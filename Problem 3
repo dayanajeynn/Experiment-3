@@ -1,0 +1,29 @@
+#include <iostream>
+#include <conio.h>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+	char arr1[100], arr2[100];
+	int i,j;
+	
+	cout << "Enter your char array: " ;	
+	cin >> arr1;
+	int size = strlen(arr1);
+	
+	for (int i = 0, j = size; i<=size; i++, j--)
+	{
+		arr2[j]=arr1[i];
+	}
+	
+	for(i = 0; i <= size; i++)
+	{
+	cout << arr2[i] << " ";
+	}
+	cout << "\n The length of your char array is: " << strlen(arr1);
+
+	_getch();
+	return 0;	
+}
